@@ -402,7 +402,7 @@ void PrintAbsyn::visitETyped(ETyped *p)
 
   render('(');
   _i_ = 0; p->exp_->accept(this);
-  render("::");
+  render(':');
   _i_ = 0; p->type_->accept(this);
   render(')');
 
