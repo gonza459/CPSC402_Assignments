@@ -1,0 +1,14 @@
+import java.io.*;
+
+public class read_file {
+  public static void main(String[] args) throws Exception {
+    FileReader fr = new FileReader("file.txt");
+
+    char c;
+    int i;
+    while ((i=fr.read()) != -1) {
+      c = (char) i;
+      System.out.print(c);
+    }
+  }
+}
