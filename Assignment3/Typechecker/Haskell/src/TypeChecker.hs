@@ -142,6 +142,11 @@ inferTypeExp env (EAss e1 e2) = do
 inferTypeExp env (ETyped e ty) = do
     checkExp env e ty
     return ty
+inferTypeExp env (EPlus e1 e2) =
+    inferTypeOverloadedExp env (Alternative [Type_int, Type_double]) e1 [e2]
+inferTypeExp env (EId ids) = do
+    ty <- lookupVar ids env
+    return ty
 {-
 Here need to go the missing cases. Once you have all cases you can delete the next line which is only needed to catch all cases that are not yet implemented.
 -}
