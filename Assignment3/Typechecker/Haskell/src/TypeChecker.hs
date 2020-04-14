@@ -118,6 +118,13 @@ checkStm env (SDecls ty' ids) ty =
 checkStm env (SReturn e) ty = do
     checkExp env e ty
     return env
+checkStm env (SInit ty' ids exp) ty = do
+    env' <- insertVar env ids ty'
+    return env'
+checkStm env SReturnVoid ty = do
+    return env   
+    
+
 {-
 Here need to go the missing cases. Once you have all cases you can delete the next line which is only needed to catch all cases that are not yet implemented.
 -}
