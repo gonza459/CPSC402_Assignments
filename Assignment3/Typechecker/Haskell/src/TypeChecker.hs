@@ -148,6 +148,12 @@ inferTypeExp env (EPlus e1 e2) =
     inferTypeOverloadedExp env (Alternative [Type_int, Type_double]) e1 [e2]
 inferTypeExp env (EMinus e1 e2) =
     inferTypeOverloadedExp env (Alternative [Type_int, Type_double]) e1 [e2]
+inferTypeExp env (EIncr e) = do
+    ty <- checkIsNum env e
+    return ty
+inferTypeExp env (EPIncr e) = do
+    ty <- checkIsNum env e
+    return ty
 
 inferTypeExp env (EId ids) = do
     ty <- lookupVar ids env
@@ -172,6 +178,12 @@ inferTypeOverloadedExp env (Alternative ts) e es = do
     forM_ es (flip (checkExp env) ty)
     return ty
 
+checkIsNum :: Env -> Exp -> Err Type
+checkIsNum env e = do
+    ty <- inferTypeExp env e
+    unless (ty == Type_int || ty == Type_double) $
+        fail $ "ERROR: Value is not numeric" 
+    return ty
 
 checkExp :: Env -> Exp -> Type -> Err ()
 checkExp env e ty = do
