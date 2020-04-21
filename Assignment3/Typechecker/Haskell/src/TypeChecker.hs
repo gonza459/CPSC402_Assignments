@@ -120,9 +120,7 @@ checkStm env (SReturn e) ty = do
     return env
 checkStm env (SInit ty' ids exp) ty = do
     env' <- insertVar env ids ty'
-    return env'
-checkStm env SReturnVoid ty = do
-    return env   
+    return env'  
     
 
 {-
@@ -148,9 +146,18 @@ inferTypeExp env (ETyped e ty) = do
     return ty
 inferTypeExp env (EPlus e1 e2) =
     inferTypeOverloadedExp env (Alternative [Type_int, Type_double]) e1 [e2]
+inferTypeExp env (EMinus e1 e2) =
+    inferTypeOverloadedExp env (Alternative [Type_int, Type_double]) e1 [e2]
+
 inferTypeExp env (EId ids) = do
     ty <- lookupVar ids env
     return ty
+inferTypeExp env (EApp id exps) = do
+    funcSig <- lookupFun env id
+    forM_ (zip exps (fst funcSig)) (\ p -> checkExp env (fst p) (snd p))
+    unless ((length exps) == (length (fst funcSig))) $
+        fail $ "ERROR: Incorrect number of arguments" ++ printTree exps ++ printTree (fst funcSig) ++ "\n"
+    return (snd funcSig)
 
 {-
 Here need to go the missing cases. Once you have all cases you can delete the next line which is only needed to catch all cases that are not yet implemented.
