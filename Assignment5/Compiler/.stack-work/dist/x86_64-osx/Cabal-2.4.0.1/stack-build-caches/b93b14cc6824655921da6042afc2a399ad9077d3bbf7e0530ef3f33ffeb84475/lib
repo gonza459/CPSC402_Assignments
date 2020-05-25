@@ -1,0 +1,52 @@
+/Users/Sam_comp/Documents/Assignment5/Compiler/README.md:
+  hash: c3cc8a92e6fda78ffc0c555f5f25008d9d097e65fe51da4ac826a665754e4a21
+  size: 183
+  modtime: 1590442085
+/Users/Sam_comp/Documents/Assignment5/Compiler/src/LexCPP.hs:
+  hash: f9b0dd930ccb07a4942799d876d50bf2e203d357348577f3dce5353cea9c9769
+  size: 63887
+  modtime: 1590442085
+/Users/Sam_comp/Documents/Assignment5/Compiler/CPPCompiler.cabal:
+  hash: abdf89ccac017370f81326a0298a911bcbdc3d804f384520d8f68049983c10de
+  size: 1687
+  modtime: 1590442085
+/Users/Sam_comp/.stack/programs/x86_64-osx/ghc-8.6.4/lib/ghc-8.6.4/include/ghcautoconf.h:
+  hash: f0efd2bdcf82a9005ea5631525474821818b8ff9911d33d958d9603d0f56cd78
+  size: 14703
+  modtime: 1569466307
+/Users/Sam_comp/Documents/Assignment5/Compiler/ChangeLog.md:
+  hash: 8813e52402bb3e213004a0a8162e4be2b4db6c6e9f671b755a7189dc61dd329f
+  size: 54
+  modtime: 1590442085
+/Users/Sam_comp/Documents/Assignment5/Compiler/src/ParCPP.hs:
+  hash: f3d09f8f74dac42da954aceacd63eb1bef1cdb1bd7950b396181c3ebc783ffb5
+  size: 72661
+  modtime: 1590442085
+/Users/Sam_comp/Documents/Assignment5/Compiler/src/ErrM.hs:
+  hash: df231f32c0d979b0ec5f9fc7acdec9f601e50a2a39d9254e498ea9575f63b0a7
+  size: 796
+  modtime: 1590442085
+/Users/Sam_comp/.stack/programs/x86_64-osx/ghc-8.6.4/lib/ghc-8.6.4/include/ghcversion.h:
+  hash: 529291d4a255ef1c3ec99116d8dca391f2db7bad8b5eab6dcbf9a70354c6eedf
+  size: 524
+  modtime: 1569466307
+/Users/Sam_comp/.stack/programs/x86_64-osx/ghc-8.6.4/lib/ghc-8.6.4/include/ghcconfig.h:
+  hash: 03f4611ae97decc9e8c76c212bf7886d003b29d5c62b43fee6623a799f6e5fdf
+  size: 64
+  modtime: 1569466307
+/Users/Sam_comp/.stack/programs/x86_64-osx/ghc-8.6.4/lib/ghc-8.6.4/include/ghcplatform.h:
+  hash: 1549d9c64c43be2e2b2f756146f102c311441a9d63e1a1cd3b33e34c67e39688
+  size: 903
+  modtime: 1569466307
+/Users/Sam_comp/Documents/Assignment5/Compiler/src/PrintCPP.hs:
+  hash: 33aec0fccb85f5731d172b9d501c72f75861d6664098070dac5932b23eee73b3
+  size: 7025
+  modtime: 1590442085
+/Users/Sam_comp/Documents/Assignment5/Compiler/src/AbsCPP.hs:
+  hash: c02f2f4b31d43815fc3fbc35ada33ba81a3e2ae69aae224078c5748bb2eda1d4
+  size: 1171
+  modtime: 1590442085
+/Users/Sam_comp/Documents/Assignment5/Compiler/src/Compiler.hs:
+  hash: b802be0f8231c22505d8b6be006c58f822c701ffa17491446607e8c757bcae72
+  size: 16869
+  modtime: 1590445103

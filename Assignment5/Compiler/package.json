@@ -1,0 +1,12 @@
+{
+  "name": "as5",
+  "version": "1.0.0",
+  "description": "",
+  "main": "run.js",
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "scanf": "^1.1.1",
+    "wabt": "^1.0.16"
+  }
+}
