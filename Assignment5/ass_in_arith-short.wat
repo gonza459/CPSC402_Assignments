@@ -21,6 +21,7 @@
    (local.set $iy$0)
    (local.get $iy$0)
    (call $printInt)
+   (local.set $ix$0)
    (local.get $ix$0)
    (call $printInt)
    (i32.const 0)
